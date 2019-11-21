@@ -1,26 +1,36 @@
 /*------------------------------------*\
 #FONTS
 \*------------------------------------*/
-@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700&display=swap');
 /*------------------------------------*\
 #Variables
 \*------------------------------------*/
 
 :root {
     /* colors */
-    --color-alpha-light: MEDIUMSLATEBLUE;
-    --color-alpha: SLATEBLUE;
+    --color-alpha-10-light: #F0F0F7;
+    --color-alpha-light: #A5A4BF;
+    --color-alpha: #A3A0FB;
+    --color-alpha-dark: #43425D;
 
-    --color-neutral-light: LIGHTSLATEGRAY;
-    --color-neutral: SLATEGRAY;
-    --color-neutral-dark: DARKSLATEGRAY;
+    --color-neutral-light: white;
+    --color-neutral: ;
+    --color-neutral-dark: #4D4F5C;
+    --color-neutral-10-dark: #3B3B53; 
+
+    --background-color: white;
 
     /* Shadows */
+    --shadow-neutral: rgba(0, 0, 0, 0.04)
 
     /* border radius */
 
     /* transitions */
     --transition-alpha: .1s;
+
+    /* whitespace */
+    --baseline: 5px;
+    
 }
 
 /*------------------------------------*\
@@ -41,7 +51,7 @@ html {
     box-sizing: border-box;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    background-color: white;
+    background-color: var(--color-alpha-10-light);
 }
 
 *,
