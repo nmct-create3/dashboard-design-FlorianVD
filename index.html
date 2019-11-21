@@ -6,6 +6,7 @@
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <title>Impekable</title>
   <meta name="description" content="This is my HTML5 boilerplate.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/screen.css">
@@ -25,17 +26,67 @@
     </header>
     <aside class="c-app__sidebar">
       <nav class="c-main-nav">
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Dashboard</a></li>
-          <li><a href="#">Inbox</a></li>
-          <li><a href="#">Products</a></li>
-          <li><a href="#">Invoices</a></li>
-          <li><a href="#">Customers</a></li>
-          <li><a href="#">Chat Room</a></li>
-          <li><a href="#">Calendar</a></li>
-          <li><a href="#">Help Center</a></li>
-          <li><a href="#">Settings</a></li>
+        <ul class="c-main-nav__list">
+          <li class="c-main-nav__item">
+            <svg class="c-icon c-icon_home">
+              <use xlink:href="./img/icons/symbol-defs.svg#c-icon_home"></use>
+            </svg>
+            <a href="#" class="c-main-nav__link">Home</a>
+          </li>
+          <li class="c-main-nav__item is-selected">
+            <svg class="c-icon c-icon_dashboard">
+              <use xlink:href="./img/icons/symbol-defs.svg#c-icon_dashboard"></use>
+            </svg>
+            <a href="#" class="c-main-nav__link">Dashboard</a>
+          </li>
+          <li class="c-main-nav__item">
+            <svg class="c-icon c-icon_inbox">
+              <use xlink:href="./img/icons/symbol-defs.svg#c-icon_inbox"></use>
+            </svg>
+            <a href="#" class="c-main-nav__link">Inbox</a>
+          </li>
+          <li class="c-main-nav__item">
+            <svg class="c-icon c-icon_products">
+              <use xlink:href="./img/icons/symbol-defs.svg#c-icon_products"></use>
+            </svg>
+            <a href="#" class="c-main-nav__link">Products</a>
+          </li>
+          <li class="c-main-nav__item">
+            <svg class="c-icon c-icon_Invoices">
+              <use xlink:href="./img/icons/symbol-defs.svg#c-icon_Invoices"></use>
+            </svg>
+            <a href="#" class="c-main-nav__link">Invoices</a>
+          </li>
+          <li class="c-main-nav__item">
+            <svg class="c-icon c-icon_customers">
+              <use xlink:href="./img/icons/symbol-defs.svg#c-icon_customers"></use>
+            </svg>
+            <a href="#" class="c-main-nav__link">Customers</a>
+          </li>
+          <li class="c-main-nav__item">
+            <svg class="c-icon c-room">
+              <use xlink:href="./img/icons/symbol-defs.svg#c-icon_chat-room"></use>
+            </svg>
+            <a href="#" class="c-main-nav__link">Chat Room</a>
+          </li>
+          <li class="c-main-nav__item">
+            <svg class="c-icon c-icon_calendar">
+              <use xlink:href="./img/icons/symbol-defs.svg#c-icon_calendar"></use>
+            </svg>
+            <a href="#" class="c-main-nav__link">Calendar</a>
+          </li>
+          <li class="c-main-nav__item">
+            <svg class="c-icon c-center">
+              <use xlink:href="./img/icons/symbol-defs.svg#c-icon_help-center"></use>
+            </svg>
+            <a href="#" class="c-main-nav__link">Help Center</a>
+          </li>
+          <li class="c-main-nav__item">
+            <svg class="c-icon c-icon_setting">
+              <use xlink:href="./img/icons/symbol-defs.svg#c-icon_setting"></use>
+            </svg>
+            <a href="#" class="c-main-nav__link">Settings</a>
+          </li>
         </ul>
       </nav>
     </aside>
