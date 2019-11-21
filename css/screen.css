@@ -1,7 +1,7 @@
 /*------------------------------------*\
 #FONTS
 \*------------------------------------*/
-
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap');
 /*------------------------------------*\
 #Variables
 \*------------------------------------*/
@@ -34,7 +34,7 @@
 */
 
 html {
-    font-size: 16px;
+    font-size: 15px;
     line-height: 1.5;
     font-family: Helvetica, arial, sans-serif;
     color: var(--color-neutral-dark);
