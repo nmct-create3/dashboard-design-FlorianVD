@@ -21,7 +21,7 @@
     --background-color: white;
 
     /* Shadows */
-    --shadow-neutral: rgba(0, 0, 0, 0.04)
+    --shadow-neutral: 0 2px 6px rgba(0, 0, 0, 0.04);
 
     /* border radius */
 
@@ -30,6 +30,9 @@
 
     /* whitespace */
     --baseline: 5px;
+
+    --layout-sidebar-width: 260px;
+    --layout-header-height: 70px;
     
 }
 
@@ -304,6 +307,31 @@ input::placeholder {
     ---
     Website main logo
 */
+.c-app {
+    min-height: 100vh;
+}
+
+.c-app__logo {
+    background: var(--color-neutral-10-dark);
+}
+
+.c-app__sidebar {
+    background: var(--color-neutral-dark);
+    box-shadow: var(--shadow-neutral);
+}
+
+.c-app__topbar {
+    background: var(--color-neutral-light);
+    box-shadow: var(--shadow-neutral);
+}
+
+@media screen and (min-width: 960px) {
+    .c-app {
+        display: grid;
+        grid-template-columns: var(--layout-sidebar-width) 1fr;
+        grid-template-rows: var(--layout-header-height) 1fr;
+    }
+}
 
 /*------------------------------------*\
 #UTILITIES
