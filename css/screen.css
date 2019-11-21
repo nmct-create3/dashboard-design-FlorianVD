@@ -307,11 +307,24 @@ input::placeholder {
     ---
     Website main logo
 */
+.c-logo {
+    margin: 0;
+
+    text-transform: uppercase;
+    color: var(--color-neutral-light);
+    
+    line-height: calc(var(--baseline) * 4);
+    font-size: 1rem; /* 1rem = 1 font-size van de body */
+}
+
 .c-app {
     min-height: 100vh;
 }
 
 .c-app__logo {
+    display: flex;
+    align-items: center;
+    padding: 0 calc(var(--baseline) * 4);
     background: var(--color-neutral-10-dark);
 }
 
