@@ -82,6 +82,19 @@ html {
     text-shadow: none;
 }
 
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 50px;
+    background: #dedede;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--color-alpha);
+}
+
 /*------------------------------------*\
 #Elements
 \*------------------------------------*/
@@ -318,7 +331,6 @@ input::placeholder {
 }
 
 .c-app {
-    min-height: 100vh;
 }
 
 .c-app__logo {
@@ -349,6 +361,13 @@ input::placeholder {
 
     .c-app__logo {
         padding: 0 calc(var(--baseline) * 4);
+    }
+
+    .c-app__sidebar,
+    .c-app__main {
+        height: calc(100vh - var(--layout-header-height));
+        overflow-y: auto;
+        overflow-x: hidden;
     }
 
     .c-app__sidebar,
