@@ -11,7 +11,9 @@
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/screen.css">
 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.bundle.min.js"></script>
   <script src="./js/svgxuse.js"></script>
+  <script src="./js/app.js"></script>
 </head>
 
 <body>
@@ -104,7 +106,7 @@
                     Bezoekers per dag
                   </h3>
                   <span class="c-card__select">
-                    <select class="c-input c-card__select-input">
+                    <select class="c-input c-card__select-input js-select-day">
                       <option class="c-card__select-item" value="Maandag">Maandag</option>
                       <option class="c-card__select-item" value="Dinsdag">Dinsdag</option>
                       <option class="c-card__select-item" value="Woensdag">Woensdag</option>
@@ -118,10 +120,13 @@
                     </svg>
                   </span>
                 </div>
+                <div class="c-card__body">
+                  <canvas class="js-graph" width="3" height="1"></canvas>
+                </div>
               </div>
             </div>
-            <div class="c-dashboard__item">Grid item</div>
-            <div class="c-dashboard__item">Grid item</div>
+            <div class="c-dashboard__item u-column-span-6">Grid item</div>
+            <div class="c-dashboard__item u-column-span-6">Grid item</div>
             <div class="c-dashboard__item">Grid item</div>
             <div class="c-dashboard__item">Grid item</div>
             <div class="c-dashboard__item">Grid item</div>
