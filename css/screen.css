@@ -19,6 +19,7 @@
     --color-neutral-10-dark: #3B3B53; 
 
     --background-color: white;
+    --color-border: #D7DAE2;
 
     /* Shadows */
     --shadow-neutral: 0 2px 6px rgba(0, 0, 0, 0.04);
@@ -427,6 +428,46 @@ input::placeholder {
     background: white;
     padding: 20px;
     box-shadow: var(--shadow-neutral);
+}
+
+.has-action {
+    display: flex;
+    justify-content: space-between;
+}
+
+.c-card__title {
+    font-size: calc(1em * 1.2);
+    color: var(--color-neutral-dark);
+    font-weight: 400;
+}
+
+.c-card__select {
+    display: block;
+    position: relative;
+}
+
+.c-card__select-input {
+    border: 1px solid var(--color-border);
+    border-radius: var(--baseline);
+    box-shadow: var(--shadow-neutral);
+    padding: 1px 12px;
+    width: calc(var(--layout-sidebar-width) / 2);
+    height: calc(var(--baseline) * 6);
+    -webkit-appearance: none;
+    appearance: none;
+    -moz-appearance: none;
+}
+
+.c-card__select-item {
+    font-size: calc(1em * 0.86);
+}
+
+.c-card__select-symbol {
+    fill: var(--color-neutral);
+    transform: rotate(180deg);
+    position: absolute;
+    right: var(--baseline);
+    top: var(--baseline);
 }
 
 @media screen and (min-width: 960px) {
