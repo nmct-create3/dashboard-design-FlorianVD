@@ -132,6 +132,7 @@ h2 {
     font-size: 32px;
     line-height: 40px;
     margin: 0 0 24px;
+    font-weight: 400;
 }
 
 h3 {
@@ -330,8 +331,9 @@ input::placeholder {
     font-size: 1rem; /* 1rem = 1 font-size van de body */
 }
 
-.c-app {
-}
+/* .c-app__main {
+    padding: 30px 70px;
+} */
 
 .c-app__logo {
     display: flex;
@@ -414,6 +416,27 @@ input::placeholder {
     border-left: var(--baseline) solid var(--color-alpha);
     background-color: var(--color-neutral-10-dark);
     --local-color-alpha-light: var(--color-alpha);
+}
+
+.c-dashboard {
+    display: grid;
+    grid-gap: 30px;
+}
+
+.c-dashboard__item {
+    background: white;
+    padding: 20px;
+    box-shadow: var(--shadow-neutral);
+}
+
+@media screen and (min-width: 960px) {
+    .c-dashboard {
+        grid-template-columns: repeat(12, 1fr);
+    }
+
+    .c-dashboard__item {
+        grid-column: 1 / -1;
+    }
 }
 /* 
 .is-selected .c-icon {
@@ -520,6 +543,52 @@ input::placeholder {
 
 .u-text-sm {
     font-size: 14px;
+}
+
+/*
+    Utilities: text
+    Utility classes for grid columns and rows
+*/
+
+.u-column-span-3 {
+    grid-column: span 3;
+}
+
+
+.u-column-span-4 {
+    grid-column: span 4;
+}
+
+.u-column-span-6 {
+    grid-column: span 6;
+}
+
+.u-column-span-8 {
+    grid-column: span 8;
+}
+
+.u-column-span-9 {
+    grid-column: span 9;
+}
+
+.u-row-span-3 {
+    grid-row: span 3
+}
+
+.u-row-span-4 {
+    grid-row: span 4
+}
+
+.u-row-span-6 {
+    grid-row: span 6
+}
+
+.u-row-span-8 {
+    grid-row: span 8
+}
+
+.u-row-span-9 {
+    grid-row: span 9
 }
 
 /*------------------------------------*\
