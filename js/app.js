@@ -1,10 +1,16 @@
-let daySelect, graph;
+let INITIAL_RENDER = false;
+let daySelect, graph, chart;
 const endpoint = 'https://iotcloud-nmct.azurewebsites.net/api/visitors/$$day$$';
 
 const renderChart = (values) => {
   console.log(values);
+  if (INITIAL_RENDER) {
+    chart.data.datasets[0].data = values;
+    chart.update();
+    return;
+  }
   let ctx = graph.getContext('2d');
-  new Chart(ctx, {
+  chart = new Chart(ctx, {
     type: 'line',
     data: {
       labels: generateWeeks(),
@@ -26,6 +32,8 @@ const renderChart = (values) => {
       }
     }
   });
+  INITIAL_RENDER = true;
+  console.log(chart);
 }
 
 const generateWeeks = () => {

@@ -439,6 +439,7 @@ input::placeholder {
     font-size: calc(1em * 1.2);
     color: var(--color-neutral-dark);
     font-weight: 400;
+    margin: 0;
 }
 
 .c-card__select {
@@ -456,6 +457,7 @@ input::placeholder {
     -webkit-appearance: none;
     appearance: none;
     -moz-appearance: none;
+    cursor: pointer;
 }
 
 .c-card__select-item {
@@ -467,7 +469,8 @@ input::placeholder {
     transform: rotate(180deg);
     position: absolute;
     right: var(--baseline);
-    top: var(--baseline);
+    top: calc(var(--baseline) * 2);
+    pointer-events: none;
 }
 
 @media screen and (min-width: 960px) {
