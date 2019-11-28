@@ -482,6 +482,35 @@ input::placeholder {
         grid-column: 1 / -1;
     }
 }
+
+.c-piechart {
+    transform: rotate(-90deg);
+}
+
+.c-piechart__item {
+    stroke-linecap: round;
+    stroke-width: 8px;
+    stroke: var(--color-border);
+    cx: 50%;
+    cy: 50%;
+    r: 27;
+    fill: transparent;
+}
+
+.c-piechart__item-colored {
+    stroke: var(--color-alpha);
+    stroke-dasharray: 0, 170; /* 2 * pi * straal */
+    animation: grow 0.6s ease-in-out forwards;
+}
+
+@keyframes grow {
+    80% {
+        stroke-dasharray: 32, 170;
+    }
+    to {
+        stroke-dasharray: 30, 170;
+    }
+}
 /* 
 .is-selected .c-icon {
     fill: var(--color-alpha);
